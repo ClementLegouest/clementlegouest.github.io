@@ -13,17 +13,27 @@
 <body>
   <div id="container"></div>
   <script type="text/babel">
-    class HelloWorld extends React.Component {
+    class Buttonufy extends React.Component {
       render() {
-        return <h2>
-          Hello World Componentized
-          </h2>
+        return (
+          <div>
+            <button type={this.props.behavior}>{this.props.children}</button>
+          </div>
+        );
       }
     }
+
+    class HelloWorld extends React.Component {
+      render() {
+        return <h2>Hello, {this.props.greetTarget}!</h2>
+      }
+    }
+
     ReactDOM.render(
       <div>
         <h1>Clément</h1>
-        <HelloWorld />
+        <HelloWorld greetTarget="Clément" />
+        <Buttonufy behavior="submit">SEND DATA</Buttonufy>
       </div>,
       document.querySelector("#container")
     )
