@@ -2,41 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clément Legouest</title>
-  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-  <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-  <div id="container"></div>
-  <script type="text/babel">
-    class Buttonufy extends React.Component {
-      render() {
-        return (
-          <div>
-            <button type={this.props.behavior}>{this.props.children}</button>
-          </div>
-        );
-      }
-    }
-
-    class HelloWorld extends React.Component {
-      render() {
-        return <h2>Hello, {this.props.greetTarget}!</h2>
-      }
-    }
-
-    ReactDOM.render(
-      <div>
-        <h1>Clément</h1>
-        <HelloWorld greetTarget="Clément" />
-        <Buttonufy behavior="submit">SEND DATA</Buttonufy>
-      </div>,
-      document.querySelector("#container")
-    )
-  </script>
+  <header>
+    <h1>CLÉMENT LEGOUEST</h1>
+  </header>
+  <main></main>
+  <footer></footer>
 </body>
 </html>
