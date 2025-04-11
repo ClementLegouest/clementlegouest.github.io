@@ -1,9 +1,57 @@
-#container {
-    padding: 50px;
-    background-color: #eee;
+:root {
+    --background-color: #F4EBD0; /* Crème */
+    --text-color: #3B3024; /* Brun foncé */
+    --header-bg-color: #6B4226; /* Brun terreux */
+    --header-text-color: #D9C5A0; /* Beige doux */
+    --nav-item-bg-color: #A67F5B; /* Marron clair */
+    --nav-item-hover-bg-color: #6B4226; /* Brun terreux */
+    --nav-link-hover-color: #F4EBD0; /* Crème */
 }
-#container h1 {
-    font-size: 77px;
-    font-family: sans-serif;
-    color: #0080A8;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background-color); /* Crème */
+    color: var(--text-color); /* Brun foncé */
+    font-size: 1.2em;
+}
+
+header {
+    background-color: var(--header-bg-color); /* Brun terreux */
+    color: var(--header-text-color); /* Beige doux */
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > nav > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+header > nav > ul > li {
+    padding: 0.5em;
+    background-color: var(--nav-item-bg-color); /* Marron clair */
+    border-radius: 5px;
+}
+
+header > nav > ul > li:hover {
+    background-color: var(--nav-item-hover-bg-color); /* Brun terreux */
+}
+
+header > nav > ul > li > a {
+    color: var(--header-text-color); /* Beige doux */
+}
+
+header > nav > ul > li > a:hover {
+    color: var(--nav-link-hover-color); /* Crème */
 }
